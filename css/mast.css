@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #0a1a32;
+    display: flex;
+    font-size: 16px;
+}
+
+.menu {
+    background-color: #123; 
+    width: 60px;
+    padding: 20px;
+    position: relative;
+    height: 95%;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+}
+
+.menu:hover {
+    width: 260px; 
+}
+
+.img-box {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.img-box img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid rgb(73, 68, 68);
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 18px;
+    margin: 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .5s;
+    color: white;
+}
+
+ul li a:hover, .active {
+    background-color: #ffffff55;
+    font-size: 20px;
+}
+
+.log-out {
+    position: relative;
+    bottom: -40px; /* تحديد المسافة من الأسفل */
+    background-color: brown;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: .5s;
+}
+
+.log-out:hover {
+    background-color: #5c1818;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.cont {
+    width: 100%;
+    margin: 10px;
+}
+
+.info {
+    background-color: rgb(0, 29, 122);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.data-in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box {
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.box:hover {
+    background-color: #ffffff55;
+}
+
+i {
+    font-size: 40px;
+}
+
+.data {
+    text-align: center;
+}
+
+span {
+    font-size: 30px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 9px;
+    border-radius: 8px;
+}
+
+td, th {
+    background-color: #123;
+    height: 40px;
+    color: white;
+}
+
+td:hover {
+    background-color: rgba(25, 69, 200, 0.415);
+}
+
+.price, .count {
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.price {
+    background-color: rgb(9, 52, 37);
+    width: 100%;
+}
